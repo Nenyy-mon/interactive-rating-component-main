@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+  color: white;
+  font-family: "Overpass", sans-serif;
+}
+#attriButeHid {
+  display: none !important;
+}
+#attriButeShow {
+  display: flex;
+}
+/* Editing the inner of the first part of desktop ratings */
+#fullDiv {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 400px;
+  background-color: hsl(213, 19%, 18%);
+  justify-content: space-around;
+  padding: 30px;
+  border-radius: 40px;
+}
+h2.quest {
+  margin-bottom: 0;
+  font-weight: 400;
+}
+p.rateUs {
+  margin-top: 0px;
+  color: hsl(217, 12%, 63%);
+  font-weight: 700;
+  padding-right: 15px;
+  font-size: 15px;
+}
+div.ratings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .number {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(217, 12%, 63%, 0.226);
+    border-radius: 25px;
+    color: hsla(217, 12%, 63%, 0.527);
+    font-weight: 700;
+    cursor: pointer;
+    transition: 300ms;
+    &:hover {
+      color: white;
+      background-color: hsl(217, 12%, 63%);
+    }
+    &:active {
+      transition-duration: 0ms;
+      background-color: hsl(25, 97%, 53%);
+      color: white;
+    }
+  }
+}
+
+.btnSubmit {
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  height: 45px;
+  width: 350px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+
+  cursor: pointer;
+  &:hover {
+    scale: 1.02;
+  }
+  &:active {
+    border: 1px solid hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+  }
+}
+.star {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(217, 12%, 63%, 0.048);
+  border-radius: 25px;
+}
+
+/* Second div when rate is submitted */
+#hiddenToBe {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 370px;
+  align-items: center;
+  background-color: hsl(213, 19%, 18%);
+  justify-content: space-around;
+  padding: 30px;
+  border-radius: 40px;
+}
+.hidden {
+  display: none !important;
+}
+p.appreciation {
+  text-align: center;
+  font-size: 17px;
+  line-height: 28px;
+  color: hsl(217, 12%, 63%);
+}
+div.select {
+  background-color: hsla(217, 12%, 63%, 0.226);
+  padding: 10px;
+  width: fit-content;
+  height: 30px;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+}
+p.selected {
+  color: hsl(25, 97%, 53%);
+  font-weight: 400;
+}
+div.number.colored {
+  color: white !important;
+  background-color: hsl(25, 97%, 53%) !important;
+  &:hover {
+    color: white !important;
+    background-color: hsl(25, 97%, 53%) !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+  div#fullDiv {
+    width: 250px;
+  }
+  .btnSubmit {
+    width: 250px;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    height: 45px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+
+    &:hover {
+      scale: 1.02;
+    }
+    &:active {
+      border: 1px solid hsl(213, 19%, 18%);
+      color: hsl(25, 97%, 53%);
+      background-color: white;
+    }
+  }
+  .number {
+    width: 40px !important;
+    height: 40px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(217, 12%, 63%, 0.226);
+    border-radius: 25px;
+    color: hsla(217, 12%, 63%, 0.527);
+    font-weight: 700;
+    cursor: pointer;
+
+    &:active {
+      background-color: hsl(25, 97%, 53%);
+      color: white;
+    }
+  }
+  p.rateUs {
+    width: 260px;
+    font-size: 14px;
+    margin: 0;
+    letter-spacing: 0.1px;
+    height: 50px;
+  }
+}
+div.attribution {
+  position: absolute;
+  bottom: 10px;
+}
+a {
+  color: hsl(25, 97%, 53%);
+  text-decoration: none;
+}
+div#hiddenToBe {
+  flex-direction: column;
+  width: 250px;
+  height: 370px;
+  align-items: center;
+  background-color: hsl(213, 19%, 18%);
+  justify-content: space-around;
+  padding: 30px;
+  padding-top: 50px;
+  border-radius: 40px;
+}
+p.appreciation {
+  font-size: 15px;
+}
+p.selected {
+  font-size: 15px;
+}
+div.attribution {
+  font-size: 12px;
+}
